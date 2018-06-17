@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Krona+One|Roboto');
+
+html, body, h3{
+    padding: 0;
+    margin: 0;
+}
+
+html, body
+{
+    background-color: #333333;
+}
+
+
+
+/*font family*/
+p {
+    font-family: 'Roboto', sans-serif;
+    color: ghostwhite;
+}  h1, h2, h3 {
+    font-family: 'Krona One', sans-serif;
+       color: ghostwhite;
+
+   }
+   header{
+       padding: 2em;
+   }
+   header, aside{
+       background-color: rgba(0,0,0,0.66);
+   }
+
+   h1, .tagline{
+       color: snow
+   }
+   section {
+       display: grid;
+       grid-template-columns: auto 1fr;
+       padding-bottom: .2em;
+   }
+
+
+   .getal{
+       background-color: red;
+       color: #fff;
+       font-size: 3em;
+       width: 1.2em;
+       text-align: right;
+       padding:.2em;
+   }
+
+   article {
+       padding: 1em;
+   }
+
+   section img {
+       max-width: 100%;
+   }
+   aside a{
+       text-decoration: none;
+       display: block;
+       padding: 2em;
+   }
+
+   aside h3{
+       background-color: red;
+       padding: 2em;
+       color: #fff;
+
+   }
+   aside ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+
+   footer{
+       background-color: #333;
+       color: #eee;
+       padding: 2em;
+   }
+   aside a:hover {
+       background-color: red;
+       color: #fff;
+   }
+
+   @media screen and (min-width: 760px) {
+       .afb {
+           display: block;
+           background-image: url("img/vrijdag13.jpg");
+           background-size: cover;
+           background-position: center center;
+       }
+       body {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-template-areas: "kop kop"
+            "t1 t2"
+            "t3 t4"
+            "t3 t5"
+            "afb t6"
+            "afb t7"
+            "t8 t9"
+            "t10 aside"
+            "t10 aside"
+            "voet voet";
+       }
+       header {grid-area: kop;}
+       .positief{grid-area: t1;}
+       .complimentje{grid-area: t2;}
+       .karma{grid-area: t3;}
+       .talisman{grid-area: t4;}
+       .afb{grid-area: afb;}
+       .leuk{grid-area: t5;}
+       .opruimen{grid-area: t6;}
+       .vermijden{grid-area: t7;}
+       .stress{grid-area: t8;}
+       .lorem{grid-area: t9;}
+       .altijd{grid-area: t10;}
+       aside {grid-area: aside;}
+       footer {grid-area: voet;}
+
+       h1{font-size: 2.6em;}
+
+       .positief_article{
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-gap: .2em;
+       }
+       .positief_article h3 {grid-column: span 2; }
+       footer {
+           display: grid;
+           grid-template-columns: 1fr auto;
+       }
+   }
+@media screen and (min-width: 1000px) {
+    body{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "kop kop kop"
+"t1 t2 afb"
+"t3 t4 afb"
+"t3 t5 afb"
+"aside t6 t6"
+"aside t7 t8"
+"aside t9 t10"
+"aside voet voet";
+}
+}
+
+
+
+
+/*validatie*/
+#validatie img {
+    height: 30px;
+    width: auto;
+    border: 0;
+    margin: 0 .3em;
+}
